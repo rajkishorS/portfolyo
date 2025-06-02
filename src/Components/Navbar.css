@@ -1,0 +1,89 @@
+/* ========== Navbar Container ========== */
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #9fa8bd !important;
+  z-index: 1100;
+}
+
+/* ========== Toolbar Layout ========== */
+.navbar-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+
+/* ========== Raj Kishor Title (Left) ========== */
+.navbar-title {
+  font-size: clamp(1.5rem, 2.5vw, 2.25rem) !important;
+  font-weight: bold !important;
+  color: rgb(244, 32, 32);
+  white-space: nowrap;
+}
+
+/* ========== Navigation Buttons Container (Right) ========== */
+.navbar-right {
+  display: flex;
+  gap: 12px;
+}
+
+/* ========== Individual Buttons ========== */
+.navbar-button {
+  padding: 4px 10px !important;
+  font-size: 0.9rem;
+  color: white !important;
+  text-transform: none !important;
+  min-width: auto !important;
+}
+
+/* ========== Drawer (Mobile Menu) ========== */
+.drawer-content {
+  width: 250px;
+  padding: 1rem;
+  background-color: #2a240f;
+  height: 100%;
+  color: white;
+}
+
+.drawer-close {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.drawer-link {
+  padding-left: 1rem !important;
+  color: white;
+}
+
+.icon-button {
+  color: white !important;
+}
+
+/* ========== Responsive Layout ========== */
+@media (max-width: 1200px) {
+  .navbar-toolbar {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+
+@media (max-width: 960px) {
+  .navbar-toolbar {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar-toolbar {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0 16px;
+  }
+}
