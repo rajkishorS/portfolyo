@@ -33,11 +33,15 @@ function Navbar() {
 
   const drawer = (
     <Box className="drawer-content" role="presentation">
-      <Box className="drawer-close">
-        <IconButton onClick={() => setDrawerOpen(false)} aria-label="close">
+      <Box className="drawer-header">
+        <Typography className="drawer-title">
+          Raj Kishor
+        </Typography>
+        <IconButton onClick={() => setDrawerOpen(false)} aria-label="close" className="icon-button">
           <CloseIcon />
         </IconButton>
       </Box>
+
 
       <List>
         {navLinks.map((item) => (

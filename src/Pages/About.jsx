@@ -13,14 +13,7 @@ const About = () => {
           I specialize in building dynamic, responsive web applications using modern technologies like React, Node.js, and MongoDB.
         </p>
 
-        <p>
-          I have completed a React.js internship at Infolabz Pvt. Ltd., and I have over a year of experience working in lithium-ion battery manufacturing.
-          I'm always eager to learn new technologies and take on challenges that help me grow.
-        </p>
-
-        <p>
-          When I’m not coding, I enjoy exploring new tech trends, contributing to projects, and helping others learn programming.
-        </p>
+        
       </div>
 
       <div className="about-extra">

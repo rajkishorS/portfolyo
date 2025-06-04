@@ -14,32 +14,36 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 /* Title */
 .contact-section h2 {
   text-align: center;
-  font-size: 32px;
-  margin-bottom: 30px;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  margin-bottom: 40px;
   color: #1a202c;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 /* Form Container */
 .contact-form {
   width: 100%;
-  max-width: 800px;
+  max-width: 900px;
   background: #ffffff;
-  padding: 30px;
+  padding: 30px 40px;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  overflow-y: auto;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
   max-height: 90vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
 }
 
-/* Full Width Fields */
+/* Make some fields full width */
 .form-group-full {
   grid-column: 1 / -1;
 }
@@ -52,19 +56,22 @@
 
 .form-group label {
   font-weight: 600;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   font-size: 15px;
+  color: #2d3748;
 }
 
 .form-group input,
 .form-group select,
 .form-group textarea {
-  padding: 12px;
+  padding: 14px 16px;
   font-size: 15px;
-  border: 1px solid #dcdfe6;
-  border-radius: 8px;
-  background-color: #fdfdfd;
-  transition: border-color 0.3s ease;
+  border: 1.5px solid #d1d5db;
+  border-radius: 10px;
+  background-color: #fafafa;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  resize: vertical;
+  min-height: 38px;
 }
 
 .form-group input:focus,
@@ -73,41 +80,84 @@
   border-color: #4a90e2;
   background-color: #fff;
   outline: none;
+  box-shadow: 0 0 6px #4a90e2aa;
 }
 
 /* Submit Button */
 .submit-btn {
   grid-column: 1 / -1;
-  padding: 14px;
-  font-size: 16px;
-  font-weight: bold;
-  background-color: #4a90e2;
+  padding: 16px;
+  font-size: clamp(14px, 1.5vw, 18px); /* Responsive font size between 14px and 18px */
+  font-weight: 700;
+  background-color: #84e24a;
   color: #fff;
   border: none;
-  border-radius: 8px;
+  border-radius: 12px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+  margin: 0 auto;
+  display: block;
+}
+.submit-btn:hover,
+.submit-btn:focus {
+  background-color: #9fbd35;
+  box-shadow: 0 6px 20px rgba(190, 233, 71, 0.9);
+  outline: none;
 }
 
-.submit-btn:hover {
-  background-color: #357ABD;
+/* Scrollbar Styling for form overflow */
+.contact-form::-webkit-scrollbar {
+ width: 0;
+  background-color: transparent;
 }
 
-/* Responsive */
+.contact-form::-webkit-scrollbar-thumb {
+  background-color: #4a90e2aa;
+  border-radius: 10px;
+}
+.contact-form {
+  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+
+/* Responsive tweaks */
+
+/* Tablets and below */
 @media (max-width: 768px) {
+  .contact-section {
+    padding: 30px 15px;
+  }
+  
+  .contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
   .contact-form {
-    grid-template-columns: 1fr;
-    padding: 20px;
+    max-width: 100%;
+    padding: 25px 20px;
+    grid-template-columns: 1fr; /* stack all fields */
+  }
+
+  .form-group-full {
+    grid-column: 1; /* full width on small screens */
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 25px 12px;
   }
 
   .contact-section h2 {
-    font-size: 26px;
+    font-size: 1.7rem;
+    margin-bottom: 25px;
   }
-}
 
-@media (max-width: 480px) {
   .contact-form {
-    padding: 16px;
+    padding: 20px 15px;
   }
 
   .form-group label {
@@ -118,9 +168,11 @@
   .form-group select,
   .form-group textarea {
     font-size: 14px;
+    padding: 12px 14px;
   }
 
   .submit-btn {
-    font-size: 15px;
+    font-size: 16px;
+    padding: 14px;
   }
 }

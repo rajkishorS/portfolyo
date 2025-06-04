@@ -43,26 +43,87 @@
 
 /* ========== Drawer (Mobile Menu) ========== */
 .drawer-content {
-  width: 250px;
-  padding: 1rem;
-  background-color: #2a240f;
-  height: 100%;
+  width: 280px;              /* Slightly wider for better spacing */
+  padding: 1.5rem 1.25rem;  /* More padding for a comfortable feel */
+  background-color: #2a240f; /* Dark warm background */
+  height: 100vh;            /* Full viewport height */
   color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.5); /* subtle shadow for depth */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Drawer close button container */
 .drawer-close {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
+  padding-right: 0.25rem;
+}
+.drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  padding: 0 0.5rem;
+  font-weight: bold;
 }
 
+
+/* Drawer Title Typography */
+.drawer-content > .MuiTypography-root {
+  font-size: 1.75rem;        /* Larger font for title */
+  font-weight: 700;          /* Bold */
+  color: #f43f5e;            /* Use the same red accent as buttons */
+  margin-bottom: 1rem;       /* Space below title */
+  padding-left: 0.5rem;      /* Some padding to align with list items */
+  user-select: none;         /* Prevent text selection */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.drawer-content .drawer-title {
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+}
+/* Style for individual drawer links */
 .drawer-link {
   padding-left: 1rem !important;
   color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Add hover effect on drawer links */
+.drawer-link:hover,
+.drawer-link:focus {
+  background-color: #f43f5e;
+  color: white !important;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* ListItemButton in drawer: full width, nicely padded */
+.MuiListItemButton-root {
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+}
+
+/* Ensure icons/buttons in drawer use white color */
 .icon-button {
   color: white !important;
+}
+
+/* Optional: add a subtle divider between links */
+.drawer-content .MuiList-root > .MuiListItem-root:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Scroll if content overflows */
+.drawer-content {
+  overflow-y: auto;
 }
 
 /* ========== Responsive Layout ========== */

@@ -8,7 +8,7 @@ const projects = [
     shortDesc: 'Full-stack web app to book accommodations, built with MERN stack.',
     description: `StayHavenix is a full-stack accommodation booking platform designed and developed with MongoDB, Express.js, React.js, and Node.js. It allows users to search, book, and review stays.`,
     techStack: ['React', 'Node.js', 'Express', 'MongoDB', 'Bootstrap'],
-    imageUrl: '/path/to/stayhavenix.png',
+    imageUrl: '../assets/raj.jpg',
     projectLink: 'https://github.com/rajkishor/stayhavenix'
   },
   {
