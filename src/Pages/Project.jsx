@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Project.css';
+import StayHavenixImage from '../assets/stayhavnex.jpg'
 
 const projects = [
   {
@@ -8,7 +9,7 @@ const projects = [
     shortDesc: 'Full-stack web app to book accommodations, built with MERN stack.',
     description: `StayHavenix is a full-stack accommodation booking platform designed and developed with MongoDB, Express.js, React.js, and Node.js. It allows users to search, book, and review stays.`,
     techStack: ['React', 'Node.js', 'Express', 'MongoDB', 'Bootstrap'],
-    imageUrl: '../assets/raj.jpg',
+    imageUrl: StayHavenixImage,
     projectLink: 'https://github.com/rajkishor/stayhavenix'
   },
   {
@@ -17,7 +18,7 @@ const projects = [
     shortDesc: 'Personal portfolio to showcase my skills and projects.',
     description: `A responsive portfolio website built with React to showcase my projects, skills, and experience. Includes smooth scrolling and contact form.`,
     techStack: ['React', 'CSS', 'Material UI'],
-    imageUrl: '/path/to/portfolio.png',
+    imageUrl: StayHavenixImage,
     projectLink: 'https://www.linkedin.com/in/raj-kishor-595a082a1/'
   },
   {
@@ -26,7 +27,7 @@ const projects = [
     shortDesc: 'this project increse the solare effencicy and take the 40% effenciency',
     description: `A responsive portfolio website built with React to showcase my projects, skills, and experience. Includes smooth scrolling and contact form.`,
     techStack: ['Embedded', 'programming c', 'microcontrol'],
-    imageUrl: '/path/to/portfolio.png',
+    imageUrl: StayHavenixImage,
     projectLink: 'https://www.raju.com'
   },
   {
@@ -35,7 +36,7 @@ const projects = [
     shortDesc: 'this project increse the solare effencicy and take the 40% effenciency',
     description: `A responsive portfolio website built with React to showcase my projects, skills, and experience. Includes smooth scrolling and contact form.`,
     techStack: ['Embedded, programming c, microcontrol'],
-    imageUrl: '/path/to/portfolio.png',
+    imageUrl: StayHavenixImage,
     projectLink: 'https://www.raju.com'
   },
   {
@@ -44,7 +45,7 @@ const projects = [
     shortDesc: 'this project increse the solare effencicy and take the 40% effenciency',
     description: `A responsive portfolio website built with React to showcase my projects, skills, and experience. Includes smooth scrolling and contact form.`,
     techStack: ['Embedded, programming c, microcontrol'],
-    imageUrl: '/path/to/portfolio.png',
+    imageUrl:StayHavenixImage,
     projectLink: 'https://www.raju.com'
   },
 ];

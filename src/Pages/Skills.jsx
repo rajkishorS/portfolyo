@@ -18,15 +18,6 @@ const skills = [
     { name: 'Java', level: 'Advanced', icon: <FaJava />, cert: '' },
     { name: 'Python', level: 'Basic', icon: <FaPython />, cert: '' },
     { name: 'Git & GitHub', level: 'Advanced', icon: <FaGitAlt />, cert: '' },
-    { name: 'Figma', level: 'Intermediate', icon: <SiFigma />, cert: '' },
-    { name: 'Node.js', level: 'Intermediate', icon: <FaNodeJs />, cert: 'https://example.com/node-cert' },
-    { name: 'Express.js', level: 'Intermediate', icon: <SiExpress />, cert: '' },
-    { name: 'MongoDB', level: 'Intermediate', icon: <SiMongodb />, cert: '' },
-    { name: 'SQL', level: 'Intermediate', icon: <SiMysql />, cert: '' },
-    { name: 'Java', level: 'Advanced', icon: <FaJava />, cert: '' },
-    { name: 'Python', level: 'Basic', icon: <FaPython />, cert: '' },
-    { name: 'Git & GitHub', level: 'Advanced', icon: <FaGitAlt />, cert: '' },
-    { name: 'Figma', level: 'Intermediate', icon: <SiFigma />, cert: '' },
 ];
 
 const Skills = () => {

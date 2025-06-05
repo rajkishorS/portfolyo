@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import './Hero.css';
 import myImage from '../assets/raj.jpg';
 import { FaDownload } from 'react-icons/fa';
-import heroVideo from '../assets/Raju.mp4';
+import heroVideo from '../assets/Raj.mp4';
 
 const Hero = () => {
   const videoRef = useRef(null);
@@ -37,8 +37,7 @@ const Hero = () => {
       <div className="hero-text">
         <h1>Hi, I'm Raj Kishor</h1>
         <p>
-          I'm a passionate full-stack developer with expertise in React, Node.js, and modern web technologies.
-          I love crafting clean, efficient, and user-friendly web applications that solve real-world problems.
+          I'm a passionate full-stack developer with hands-on experience in building scalable web applications using modern web technologies. I specialize in developing clean, efficient, and user-centric solutions—from intuitive frontends to robust backend systems. I'm also skilled in integrating third-party APIs, including AI-powered services, to deliver smart, real-world functionality that drives results.
         </p>
         <div className="hero-buttons">
           <a

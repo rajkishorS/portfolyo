@@ -57,7 +57,7 @@ function Navbar() {
 
   return (
     <>
-      <AppBar position="sticky" className="navbar">
+      <AppBar  className="navbar">
         <Toolbar className="navbar-toolbar">
           <Typography className="navbar-title">
             Raj Kishor
