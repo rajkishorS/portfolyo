@@ -28,7 +28,7 @@ const Footer = () => {
           <h3>Contact</h3>
           <p>Email: Rajkishorec39@gmail.com</p>
           <p>Phone: +916205938988</p>
-          <p>Location:Ahemdabad, Gujrat</p>
+          <p>Location: Ahemdabad, Gujrat</p>
         </div>
 
         <div className="footer-section social">

@@ -7,8 +7,8 @@
 
 .projects-section h2 {
   text-align: center;
-  font-size: clamp(2rem, 4vw, 3rem); /* responsive heading */
-  color: #f43f5e; /* bright pink/red from your theme */
+  font-size: clamp(2rem, 4vw, 3rem); 
+  color: #fdfdfd; 
   font-weight: 700;
   margin-bottom: 2rem;
   letter-spacing: 1px;
