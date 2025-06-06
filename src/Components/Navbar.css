@@ -4,10 +4,9 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #9fa8bd !important;
+  background-color:  #222!important;
   z-index: 1100;
 }
-
 /* ========== Toolbar Layout ========== */
 .navbar-toolbar {
   display: flex;
@@ -45,7 +44,7 @@
 .drawer-content {
   width: 280px;              /* Slightly wider for better spacing */
   padding: 1.5rem 1.25rem;  /* More padding for a comfortable feel */
-  background-color: #2a240f; /* Dark warm background */
+  background-color: #222; /* Dark warm background */
   height: 100vh;            /* Full viewport height */
   color: white;
   display: flex;

@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
 import './Project.css';
-import StayHavenixImage from '../assets/stayhavnex.jpg'
+import StayHavenixImage from '../assets/stayhavnex.jpg';
+import Songify from '../assets/image.png'
+import portfolio from '../assets/portfolio.png'
+import TraficControl from '../assets/TraficControl.jpg'
+import solar from '../assets/solar.jpg'
 const projects = [
+
   {
     id: 1,
     title: 'StayHavenix - Accommodation Booking Platform',
@@ -13,30 +18,39 @@ const projects = [
   },
   {
     id: 2,
+    title: 'Songify - Music Player',
+    shortDesc: 'A full-stack music streaming web app built with the MERN stack.',
+    description: `Songify is a full-stack music streaming platform developed using MongoDB, Express.js, React.js, and Node.js. It allows users to browse, search, and stream music tracks, create personalized playlists, and enjoy a responsive, sleek interface designed for music lovers.`,
+    techStack: ['React', 'Node.js', 'Express', 'MongoDB', 'Material UI'],
+    imageUrl: Songify, 
+    projectLink: 'https://github.com/rajkishorS/songify-'
+  },
+  {
+    id: 3,
     title: 'Portfolio Website',
     shortDesc: 'Personal portfolio to showcase my skills and projects.',
     description: `A responsive portfolio website built with React to showcase my projects, skills, and experience. Includes smooth scrolling and contact form.`,
     techStack: ['React', 'CSS', 'Material UI'],
-    imageUrl: StayHavenixImage,
+    imageUrl: portfolio,
     projectLink: 'https://www.linkedin.com/in/raj-kishor-595a082a1/'
   },
   {
-    id: 3,
+    id: 4,
     title: 'Density-Based Traffic Control System ',
     shortDesc: 'A Density-Based Traffic Control System adjusts traffic signals dynamically.',
     description: `Traditional traffic lights run on fixed timers regardless of traffic flow. This leads to congestion, unnecessary waiting, or underutilization. Density-based systems aim to reduce congestion and waiting time by adapting signal timings according to real-time traffic conditions.`,
-    techStack: ['Embedded', 'programming c', 'microcontrol','ArdinoUno program'],
-    imageUrl: StayHavenixImage,
-    projectLink: 'https://www.raju.com'
+    techStack: ['Embedded', 'programming c', 'microcontrol', 'ArdinoUno program'],
+    imageUrl: TraficControl,
+    projectLink: ''
   },
   {
-    id: 4,
+    id: 5,
     title: 'Dual axis solar tracking system',
     shortDesc: 'this project increse the solare effencicy and take the 40% effenciency',
     description: `A responsive portfolio website built with React to showcase my projects, skills, and experience. Includes smooth scrolling and contact form.`,
     techStack: ['Embedded', 'programming c', 'microcontrol'],
-    imageUrl: StayHavenixImage,
-    projectLink: 'https://www.raju.com'
+    imageUrl:solar,
+    projectLink: ''
   },
 ];
 
