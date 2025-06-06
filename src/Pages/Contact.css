@@ -41,6 +41,13 @@
   max-height: 90vh;
   overflow-y: auto;
   scroll-behavior: smooth;
+
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+.contact-form::-webkit-scrollbar {
+  width: 0;
+  background-color: transparent;
 }
 
 /* Make some fields full width */
@@ -83,11 +90,19 @@
   box-shadow: 0 0 6px #4a90e2aa;
 }
 
+/* Error messages */
+.error {
+  color: #e53e3e;
+  font-size: 13px;
+  margin-top: 4px;
+  font-weight: 500;
+}
+
 /* Submit Button */
 .submit-btn {
   grid-column: 1 / -1;
   padding: 16px;
-  font-size: clamp(14px, 1.5vw, 18px); /* Responsive font size between 14px and 18px */
+  font-size: clamp(14px, 1.5vw, 18px);
   font-weight: 700;
   background-color: #84e24a;
   color: #fff;
@@ -99,6 +114,7 @@
   margin: 0 auto;
   display: block;
 }
+
 .submit-btn:hover,
 .submit-btn:focus {
   background-color: #9fbd35;
@@ -106,29 +122,12 @@
   outline: none;
 }
 
-/* Scrollbar Styling for form overflow */
-.contact-form::-webkit-scrollbar {
- width: 0;
-  background-color: transparent;
-}
-
-.contact-form::-webkit-scrollbar-thumb {
-  background-color: #4a90e2aa;
-  border-radius: 10px;
-}
-.contact-form {
-  scrollbar-width: none;  /* Firefox */
-  -ms-overflow-style: none;  /* IE and Edge */
-}
-
-/* Responsive tweaks */
-
 /* Tablets and below */
 @media (max-width: 768px) {
   .contact-section {
     padding: 30px 15px;
   }
-  
+
   .contact-section h2 {
     font-size: 2rem;
     margin-bottom: 30px;
@@ -137,11 +136,11 @@
   .contact-form {
     max-width: 100%;
     padding: 25px 20px;
-    grid-template-columns: 1fr; /* stack all fields */
+    grid-template-columns: 1fr;
   }
 
   .form-group-full {
-    grid-column: 1; /* full width on small screens */
+    grid-column: 1;
   }
 }
 
@@ -174,5 +173,9 @@
   .submit-btn {
     font-size: 16px;
     padding: 14px;
+  }
+
+  .error {
+    font-size: 12px;
   }
 }

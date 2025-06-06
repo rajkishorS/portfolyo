@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './Project.css';
 import StayHavenixImage from '../assets/stayhavnex.jpg'
-
 const projects = [
   {
     id: 1,
@@ -23,10 +22,10 @@ const projects = [
   },
   {
     id: 3,
-    title: 'Dual axis solar tracking system',
-    shortDesc: 'this project increse the solare effencicy and take the 40% effenciency',
-    description: `A responsive portfolio website built with React to showcase my projects, skills, and experience. Includes smooth scrolling and contact form.`,
-    techStack: ['Embedded', 'programming c', 'microcontrol'],
+    title: 'Density-Based Traffic Control System ',
+    shortDesc: 'A Density-Based Traffic Control System adjusts traffic signals dynamically.',
+    description: `Traditional traffic lights run on fixed timers regardless of traffic flow. This leads to congestion, unnecessary waiting, or underutilization. Density-based systems aim to reduce congestion and waiting time by adapting signal timings according to real-time traffic conditions.`,
+    techStack: ['Embedded', 'programming c', 'microcontrol','ArdinoUno program'],
     imageUrl: StayHavenixImage,
     projectLink: 'https://www.raju.com'
   },
@@ -35,17 +34,8 @@ const projects = [
     title: 'Dual axis solar tracking system',
     shortDesc: 'this project increse the solare effencicy and take the 40% effenciency',
     description: `A responsive portfolio website built with React to showcase my projects, skills, and experience. Includes smooth scrolling and contact form.`,
-    techStack: ['Embedded, programming c, microcontrol'],
+    techStack: ['Embedded', 'programming c', 'microcontrol'],
     imageUrl: StayHavenixImage,
-    projectLink: 'https://www.raju.com'
-  },
-  {
-    id: 5,
-    title: 'Dual axis solar tracking system',
-    shortDesc: 'this project increse the solare effencicy and take the 40% effenciency',
-    description: `A responsive portfolio website built with React to showcase my projects, skills, and experience. Includes smooth scrolling and contact form.`,
-    techStack: ['Embedded, programming c, microcontrol'],
-    imageUrl:StayHavenixImage,
     projectLink: 'https://www.raju.com'
   },
 ];

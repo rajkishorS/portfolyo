@@ -4,19 +4,23 @@ import {
     FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt,
     FaPython, FaJava
 } from 'react-icons/fa';
-import { SiMongodb, SiExpress, SiMysql, SiFigma } from 'react-icons/si';
+import { MdPsychology } from 'react-icons/md'; 
+
+import { SiMongodb, SiExpress, SiMysql,SiVuedotjs,SiOpenai, SiTensorflow } from 'react-icons/si';
 
 const skills = [
-    { name: 'HTML', level: 'Advanced', icon: <FaHtml5 />, cert: 'https://drive.google.com/file/d/13jkayirmmH6S9opGU8S6prkLTYMWnRQ8/view?usp=sharing' },
-    { name: 'CSS', level: 'Advanced', icon: <FaCss3Alt />, cert: 'https://example.com/css-cert' },
-    { name: 'JavaScript', level: 'Advanced', icon: <FaJs />, cert: 'https://example.com/js-cert' },
-    { name: 'React.js', level: 'Advanced', icon: <FaReact />, cert: 'https://example.com/react-cert' },
-    { name: 'Node.js', level: 'Intermediate', icon: <FaNodeJs />, cert: 'https://example.com/node-cert' },
+    { name: 'Java', level: 'Advanced', icon: <FaJava />, cert: 'https://drive.google.com/file/d/1BMyuswWE4s2Uc-5mPJPDj-bxPkuxMQhw/view?usp=sharing' },
+    { name: 'HTML', level: 'Advanced', icon: <FaHtml5 />,cert: ''  },
+    { name: 'CSS', level: 'Advanced', icon: <FaCss3Alt />,cert: '' },
+    { name: 'JavaScript', level: 'Advanced', icon: <FaJs />,cert: ''  },
+    { name: 'React.js', level: 'Advanced', icon: <FaReact />,cert: 'https://drive.google.com/file/d/183lEOhHA1AnLiztjBLBuIrzy6XFXF2lI/view?usp=sharing'  },
+    {name:'vue.js', level:'Intermediate', icon:<SiVuedotjs/>, cert:''},
+    { name: 'Node.js', level: 'Intermediate', icon: <FaNodeJs />,cert: ''  },
     { name: 'Express.js', level: 'Intermediate', icon: <SiExpress />, cert: '' },
     { name: 'MongoDB', level: 'Intermediate', icon: <SiMongodb />, cert: '' },
     { name: 'SQL', level: 'Intermediate', icon: <SiMysql />, cert: '' },
-    { name: 'Java', level: 'Advanced', icon: <FaJava />, cert: '' },
     { name: 'Python', level: 'Basic', icon: <FaPython />, cert: '' },
+    {name:'Ai&Ml', level:'Basic', icon:< MdPsychology/>, cert:'https://drive.google.com/file/d/13jkayirmmH6S9opGU8S6prkLTYMWnRQ8/view?usp=sharing'},
     { name: 'Git & GitHub', level: 'Advanced', icon: <FaGitAlt />, cert: '' },
 ];
 
